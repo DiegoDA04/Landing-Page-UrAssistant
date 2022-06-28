@@ -300,6 +300,60 @@ section {
     margin-top: 20px;
   }
 }
+
+
+
+
+/*Testimonials section*/
+.testimonials
+{
+  padding: 20px 0;
+}
+
+.testimonials h1.title
+{
+  margin-bottom: 10px;
+}
+
+.testimonials p
+{
+  font-size: 20px;
+}
+
+.testimonials .grid  li
+{
+
+  flex-basis: 40%;
+  text-align: center;
+}
+
+.testimonials .grid li p
+{
+  margin: 0;
+}
+
+.testimonials .grid li>div
+{
+  background: white;
+  display: flex;
+  justify-items: left;
+  height: 400px;
+  width: 450px;
+
+}
+
+@media (max-width: 1000px) {
+  .testimonials .grid li {
+    flex-basis: 50%;
+    margin-bottom: 65px;
+    margin: 30px 30px;
+  }
+  .testimonials .grid li:last-child
+  {
+    margin-bottom: 0;
+  }
+}
+
 /*Contact Us section*/
 
 .contact-us
