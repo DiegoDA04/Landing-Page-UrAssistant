@@ -1,0 +1,64 @@
+
+
+/*About The App Section*/
+
+.about-the-app
+{
+  position: relative;
+  padding-top: 5px;
+}
+
+.about-the-app>div.video
+{
+  display: flex;
+  justify-items: center;
+}
+
+.video-information-app p
+{
+  padding: 0;
+}
+
+.video-information-app
+{
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  color: #444748;
+}
+
+.download-app
+{
+  cursor: pointer;
+}
+
+.download-app a:hover
+{
+  border: none;
+}
+
+.download-app .download-play-store img
+{
+  margin-bottom: 10px;
+}
+
+.download-app img
+{
+  width: 150px;
+  height: 50px;
+  box-shadow: 0px 5px 11px 1px rgba(0,0,0,0.81);
+  -webkit-box-shadow: 0px 5px 11px 1px rgba(0,0,0,0.81);
+  -moz-box-shadow: 0px 5px 11px 1px rgba(0,0,0,0.81);;
+}
+
+@media (max-width: 900px) {
+  .about-the-app>div {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .video-information-app
+  {
+    margin-top: 20px;
+  }
+}
