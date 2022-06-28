@@ -1,6 +1,167 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+
+/*General Common Styles*/
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html
+{
+  font: normal 16px Archivo;
+  color: black;
+  scroll-behavior: smooth !important;
+  background-color: #FFFFFF;
+}
+
+h2
+{
+  font-weight: bold;
+  font-size: 48px;
+}
+
+ul, li, nav
+{
+  list-style: none;
+
+}
+
+a
+{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  font: bold 20px 'Archivo';
+}
+
+a:hover
+{
+  color: #E49E00;
+  border-top: 2px solid #E49E00;
+  border-bottom: 2px solid #E49E00;
+  padding: 3px;
+}
+
+
+a.btn
+{
+  color: #FFFFFF;
+  border-radius: inherit;
+  text-transform: capitalize;
+  background-color: #002A78;
+  font-weight: 800;
+  text-align: center;
+  padding: 10px;
+  border: none;
+
+}
+a.btn:hover
+{
+  background-color: #3C5BA9;
+}
+/* Section Common Styles*/
+
+section
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 125px 100px;
+}
+
+section h1.title
+{
+
+  text-transform: capitalize;
+  font: bold 40px 'Archivo';
+  text-align: center;
+  padding-top: 40px;
+  margin-bottom: 50px;
+  color: #3C5BA9;
+}
+
+section p
+{
+  max-width: 800px;
+  color: #747778;
+  margin-bottom: 35px;
+  padding: 0 20px;
+  line-height: 1.6;
+}
+
+section p.author
+{
+  color: #002A78;
+  text-transform: capitalize;
+  font: bold 32px Archivo, sans-serif;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+section p.role
+{
+  color: #000000;
+  text-transform: capitalize;
+  font: semi-expanded 16px 'Archivo', sans-serif;
+  margin-top: 5px;
+  margin-bottom: 10px;
+
+}
+
+section p.quote
+{
+  color: #747778;
+  text-transform: capitalize;
+  font: lighter 18px 'Archivo', sans-serif;
+  text-align: left;
+}
+
+section img.starts
+{
+  margin: 10px;
+}
+
+ul.grid
+{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Section Common Styles */
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 125px 100px;
+  min-height: 100vh;
+}
+
+@media (max-width: 1000px)
+{
+  section {
+    padding: 125px 100px;
+  }
+}
+
+@media (max-width: 450px)
+{
+  section {
+    padding: 125px 100px;
+  }
+}
+
+
+
+
+
 /*Benefits Section*/
-
-
 .benefits {
   height: 100%;
   display: flex;
@@ -138,4 +299,136 @@
   {
     margin-top: 20px;
   }
+}
+/*Contact Us section*/
+
+.contact-us
+{
+  padding: 125px 60px;
+}
+
+.contact-us h1
+{
+  color: #3C5BA9;
+  font-size: 40px;
+  text-align: left;
+  padding-left: 0;
+  margin: 20px 0;
+}
+
+.contact-us p
+{
+  color: #8E9192;
+  padding-left: 0;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.contact-us .grid
+{
+  flex-basis: 50%;
+}
+
+.contact-us .contact-us-text
+{
+  align-items: flex-start;
+  margin-right: 10px;
+  margin-left: 0;
+  text-align: left ;
+}
+
+.contact-us .container
+{
+  display: flex;
+  align-items: center;
+}
+
+.container .form{
+  width: 100%;
+  width: 450px;
+  margin: auto;
+  padding: 30px 25px;
+  border-radius: 10px;
+  background: #FFFFFF;
+  /*box-shadow: 0px 5px 11px 1px rgba(0,0,0,0.81);
+  -webkit-box-shadow: 0px 5px 11px 1px rgba(0,0,0,0.81);
+  -moz-box-shadow: 0px 5px 11px 1px rgba(0,0,0,0.81);;*/
+  box-shadow: -2px 9px 13px -1px rgba(0,0,0,0.81);
+  -webkit-box-shadow: -2px 9px 13px -1px rgba(0,0,0,0.81);
+  -moz-box-shadow: -2px 9px 13px -1px rgba(0,0,0,0.81);
+}
+
+
+
+.container .form-label
+{
+  display: block;
+  color: #444748;
+  font-size: 16px;
+  font-family: Archivo;
+  position: relative;
+}
+
+.container .form .form-input
+{
+  background: #EFF1F1;
+  outline: none;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  border-radius: 10px;
+  border: 2px solid #EFF1F1;
+}
+
+.container .form-textarea
+{
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  background: #EFF1F1;
+  margin-top: 5px;
+  outline: none;
+  border: none;
+}
+
+.container .form .btn-submit
+{
+  width: 30%;
+  font: normal 20px Archivo;
+  background: #3C5BA9;
+  border: none;
+  padding: 10px 0;
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+
+
+@media (max-width: 1000px) {
+  .contact-us.grid li {
+    flex-basis: 70%;
+    margin-bottom: 65px;
+  }
+
+}
+@media (max-width: 720px) {
+
+  .container .form{
+    width: 90%;
+    width: 300px;
+    margin: auto;
+    padding: 30px 25px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    /*box-shadow: 0px 5px 11px 1px rgba(0,0,0,0.81);
+    -webkit-box-shadow: 0px 5px 11px 1px rgba(0,0,0,0.81);
+    -moz-box-shadow: 0px 5px 11px 1px rgba(0,0,0,0.81);;*/
+    box-shadow: -2px 9px 13px -1px rgba(0,0,0,0.81);
+    -webkit-box-shadow: -2px 9px 13px -1px rgba(0,0,0,0.81);
+    -moz-box-shadow: -2px 9px 13px -1px rgba(0,0,0,0.81);
+  }
+
+
+
 }
