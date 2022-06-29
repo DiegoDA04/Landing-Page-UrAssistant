@@ -158,6 +158,192 @@ section {
 }
 
 
+/*Header Section*/
+
+header
+{
+
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px 0;
+}
+
+header .name
+{
+  font-family: Archivo, sans-serif;
+  color: #002A78;
+  font-size: 34px;
+  letter-spacing: 1.25px;
+  font-weight: bold;
+}
+
+header .nav-header
+{
+  display: flex;
+  align-items: center;
+  font-family: 'Archivo';
+}
+
+.nav-header .logo
+{
+  margin-right: 20px;
+}
+
+.logo img
+{
+  width: 88px;
+  height: 88px;
+}
+
+.nav-toggle {
+  color: #002A78;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 5px;
+  line-height: 60px;
+  cursor: pointer;
+
+  display: none;
+}
+
+header nav
+{
+  display: flex;
+}
+
+header nav li
+{
+  margin: 0 15px;
+  width: max-content;
+  font-size: 20px;
+  color: #002A78;
+}
+
+.idioma
+{
+  text-align: right;
+  margin-top: 0px;
+}
+.en
+{
+  color: #002A78;
+  font: bold 20px 'Archivo';
+}
+.es{
+  color: #002A78;
+  font: bold 20px 'Archivo';
+}
+
+.check
+{
+  position: relative;
+  width: 50px;
+  height: 18px;
+}
+.check:before{
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 25px;
+  background: #3C5BA9;;
+  border-radius: 25px;
+}
+
+.check:after{
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: #FFFFFF;
+  transition: 0.1s;
+  border: 2px solid #3C5BA9;
+  box-sizing:  border-box;
+  border-radius: 25px;
+}
+
+.check:checked:after
+{
+  left: 25px;
+  border: 2px solid #E49E00;
+}
+
+.check:checked:before
+{
+  background: #E49E00;
+}
+
+
+@media (max-width: 1000px) {
+  header {
+    padding: 10px 30px;
+  }
+}
+
+@media (max-width: 900px) {
+
+  header h2 {
+    margin-bottom: 15px;
+  }
+
+  a
+  {
+    font-size: 20px;
+  }
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu
+  {
+    border: 1px solid #002A78;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #FFFFFF;
+    position: fixed;
+    left: 0;
+    top: 110px;
+    width: 100%;
+    line-height: 3;
+
+    height: calc(100% - 95px);
+    overflow-y: auto;
+
+    left: 100%;
+    transition: 0.1s;
+  }
+
+  .nav-menu_visible
+  {
+    left: 0;
+
+  }
+
+  header .nav-header
+  {
+    display: flex;
+    align-items: center;
+  }
+  header .nav-header h2
+  {
+    font-family: Archivo, sans-serif;
+    color: #002A78;
+    font-size: 28px;
+    letter-spacing: 1.25px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  header .nav-header
+  {
+    display: flex;
+    align-items: center;
+    font-family: 'Archivo';
+  }
+}
 
 /*Hero Section*/
 
