@@ -159,6 +159,100 @@ section {
 
 
 
+/*Hero Section*/
+
+.hero
+{
+  justify-content: center;
+  min-height: 95vh;
+  color: white;
+  align-items: center;
+  padding:0;
+}
+
+.hero .background-image
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 83%;
+  margin-top: 110px;
+  background-size: cover;
+  z-index: -1;
+  filter: brightness(40%);
+}
+
+/*.hero {
+      height: 90vh;
+    color: #444748;
+    margin: 0;
+      background-image: url("../images/hero.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: 1;
+      filter: brightness(50%);
+}*/
+
+
+.hero h1
+{
+  font: bold 60px Archivo;
+  margin: 0 0 30px 0;
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.hero p
+{
+  line-height: 1.5;
+  margin-top: 0px;
+  padding-top: 0px;
+
+}
+
+.hero a.btn
+{
+  padding: 15px 25px;
+  font-size: 25px;
+  border-radius: 25px;
+}
+
+
+
+@media (max-width: 750px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
+  }
+
+  .hero h1
+  {
+    font: bold 30px Archivo;
+    margin: 0 0 30px 0;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  .hero a.btn
+  {
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+
+  .background-image
+  {
+    width: 200%;
+  }
+}
+
+
+
 
 
 /*Benefits Section*/
